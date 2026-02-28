@@ -5,20 +5,20 @@
 class Openspend < Formula
   desc "OpenSpend CLI for buyer onboarding and service usage"
   homepage "https://github.com/promptingcompany/openspend-cli"
-  version "0.1.0-rc.4"
+  version "0.1.0-rc.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/promptingcompany/openspend-cli/releases/download/v0.1.0-rc.4/openspend_0.1.0-rc.4_darwin_amd64.tar.gz"
-      sha256 "c033e8baaf6419a051f5f85f5ffda306cb25f308f8b96214af9d517c6c87d4ee"
+      url "https://github.com/promptingcompany/openspend-cli/releases/download/v0.1.0-rc.5/openspend_0.1.0-rc.5_darwin_amd64.tar.gz"
+      sha256 "a8c8921991aca576ef3c30c68c67afe80a48a13edec3ad465a78ccb7674ea4d7"
 
       define_method(:install) do
         bin.install "openspend"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/promptingcompany/openspend-cli/releases/download/v0.1.0-rc.4/openspend_0.1.0-rc.4_darwin_arm64.tar.gz"
-      sha256 "2e9dda85e2c5d3b8cb70178757dc56b9372790ab0c543efbd218560b49ea2999"
+      url "https://github.com/promptingcompany/openspend-cli/releases/download/v0.1.0-rc.5/openspend_0.1.0-rc.5_darwin_arm64.tar.gz"
+      sha256 "35e2b80bbc73d2502c136cc4ffb7df85ccb0aa24731478fa6eb9faeec79a7c07"
 
       define_method(:install) do
         bin.install "openspend"
@@ -28,15 +28,15 @@ class Openspend < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/promptingcompany/openspend-cli/releases/download/v0.1.0-rc.4/openspend_0.1.0-rc.4_linux_amd64.tar.gz"
-      sha256 "00fefc844dcd821c175e17623acdfe1e94dae6057d125bf477e4c17f68f555bd"
+      url "https://github.com/promptingcompany/openspend-cli/releases/download/v0.1.0-rc.5/openspend_0.1.0-rc.5_linux_amd64.tar.gz"
+      sha256 "ff3fd8fd0896b4ae330cf646dfd5fee76d38d92f321f3d3b57ec997feed1f730"
       define_method(:install) do
         bin.install "openspend"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/promptingcompany/openspend-cli/releases/download/v0.1.0-rc.4/openspend_0.1.0-rc.4_linux_arm64.tar.gz"
-      sha256 "2c59a205f8e1b9585c2c1ecf74c4b6b0f896ac1d765b8c7912acf7e9dd917256"
+      url "https://github.com/promptingcompany/openspend-cli/releases/download/v0.1.0-rc.5/openspend_0.1.0-rc.5_linux_arm64.tar.gz"
+      sha256 "fb9c9ce072e1764eed34837535f8c09d4290242fe7829a85f283746138aaca1b"
       define_method(:install) do
         bin.install "openspend"
       end
